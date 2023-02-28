@@ -4,7 +4,33 @@
 <button> Push Down</button> -->
 
 <br><hr>
-<a href="/exercise/barbell"> Barbell Curl </a>
-<a href="/exercise/benchdip"> Bench Dip </a>
-<a href="/exercise/hammercurl"> Hammer Curl </a>
-<a href="/exercise/pushdown"> Push Down </a>
+<h1>Input Your Exercise</h1>
+
+<form method="POST" action="/plan/index">
+    <div>
+        <label>Select Exercise</label>
+        <select name="exercise" multiple="multiple" >
+            <option value="barbell">Barbell</option> 
+            <option value="benchdip">Bench Dip</option>
+            <option value="hammercurl">Hammer Curl</option> 
+            <option value="pushdown">Push Down</option>      
+        </select>
+    </div>
+<div>
+    <label>Sets</label>
+    <input name="sets" type="number"/>
+</div>
+
+<div class="form-group">
+    <label>Weight</label>
+    <input name="weight" type="number"/>
+</div>
+
+<div class="form-group">
+    <label>Reps</label>
+    <input name="reps" type="number"/>
+</div>
+
+<button type="submit">Save!</button>
+</div>
+</form>

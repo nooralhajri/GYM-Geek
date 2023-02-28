@@ -43,8 +43,8 @@ exports.exercise_pushdown_get = (req, res)=>{
 exports.plan_view_get = (req, res)=>{
     Exercise.find()
     .then(exercises =>{
-        let formdata = req.body;
-         res.render('plan/index', {formdata} ) 
+        // let formdata = req.body;
+         res.render('plan/index', {exercises} ) 
     })
     .catch(err=>{
         console.log(err)
