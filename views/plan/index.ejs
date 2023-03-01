@@ -1,8 +1,8 @@
-<!-- <p>Sets: <%= //formdata.sets %></p>
-<p>Weights: <%= //formdata.weight %></p>
-<p>Reps: <%= //formdata.reps %></p> -->
+<h2>WorkOut Plan</h2>
 
-<h1>Barbell</h1> <hr>
-<h1>Bench Dip</h1> <hr>
-<h1>Hammer Curl</h1> <hr>
-<h1>Push Down</h1> <hr>
+  <%exercises.forEach(a=>{ %>
+    <p>Exercise: <%=a.exercise%></p>
+    <p>Sets: <%=a.sets%></p>
+    <p>Repetitions: <%=a.reps%></p>
+    <p>Weight: <%=a.weight%></p>
+<%})  %>
